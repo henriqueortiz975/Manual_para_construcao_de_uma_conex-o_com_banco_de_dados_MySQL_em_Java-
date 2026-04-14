@@ -16,7 +16,7 @@ public class ConexaoDAO {
         conexao = DriverManager.getConnection(url, user, password);  
         return conexao;
     }catch(Exception e){
-            JOptionPane.showMessageDialog(null,"Falnha na conexão "+ e.getMessage());
+            JOptionPane.showMessageDialog(null,"Falha na conexão "+ e.getMessage());
             return null;
     }
   }
