@@ -128,3 +128,21 @@ O aluno deverá entregar:
 - Trabalhos copiados terão nota **zero**
 - Código deve ser **autoral**
 - Projeto deve **executar sem erros**
+
+---
+
+## **Criação do Banco**
+
+create database dbpoo;
+
+use dbpoo;
+
+create table tb_usuarios(
+id_usuario int primary key,
+usuario varchar(50) not null,
+login varchar(50) not null unique,
+senha varchar(15)not null
+);
+
+insert into tb_usuarios(id_usuario, usuario, login, senha, perfil)
+values(1, 'administrador', 'admin', '123', 'admin');
