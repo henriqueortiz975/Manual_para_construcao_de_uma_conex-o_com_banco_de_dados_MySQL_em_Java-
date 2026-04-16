@@ -144,5 +144,5 @@ login varchar(50) not null unique,
 senha varchar(15)not null
 );
 
-insert into tb_usuarios(id_usuario, usuario, login, senha, perfil)
-values(1, 'administrador', 'admin', '123', 'admin');
+insert into tb_usuarios(id_usuario, usuario, login, senha)
+values(1, 'administrador', 'admin', '123');
